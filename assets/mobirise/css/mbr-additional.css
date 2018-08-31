@@ -1975,3 +1975,7 @@ body {
 .cid-r2bTiAfdit I {
   color: #df7f24;
 }
+
+a.nav-link.active {
+    color: white !important;
+}

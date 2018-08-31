@@ -47,18 +47,20 @@
            </div>
        </div>
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+        <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+            <li class="nav-item">
             <a class="nav-link link text-success display-7" href="index.html#header3-8" >
                 <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                 About Us
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link link text-success display-7" href="index.html#header5-5" aria-expanded="false"><span class="mbrib-setting3 mbr-iconfont mbr-iconfont-btn"></span>
+            <a class="nav-link link text-success display-7" href="index.html#header5-5" aria-expanded="false">
+                <span class="mbrib-setting3 mbr-iconfont mbr-iconfont-btn"></span>
                 Our Services
             </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item">
             <a class="nav-link link text-success display-7" href="index.html#footer2-d" " aria-expanded="false">
                 <span class="mbri-mobile2 mbr-iconfont mbr-iconfont-btn"></span>
                 Contact US
@@ -263,25 +265,34 @@
         <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
         <input name="animation" type="hidden">
 
-        <!-- WhatsHelp.io widget -->
+        
+       <!-- WhatsHelp.io widget -->
         <script type="text/javascript">
             (function () {
                 var options = {
-                whatsapp: "NOMOR HP", // WhatsApp number
-                telegram: "USERNAME", // Telegram bot username
-                company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
-                greeting_message: "Assalamualaikum.... Apa yang bisa kami bantu..? Kirimkan pesan anda..!", // Text of greeting message
-                call_to_action: "Pesan WA/Telegram", // Call to action
-                button_color: "#E74339", // Color of button
-                position: "right", // Position may be 'right' or 'left'
-                order: "whatsapp,telegram" // Order of buttons
+                    whatsapp: "+62811207727", // WhatsApp number
+                    call: "+62811207727", // Call phone number
+                    greeting_message: "Ada yang bisa kami bantu..?", // Text of greeting message
+                    call_to_action: "Click to contact us..", // Call to action
+                    button_color: "#FF6550", // Color of button
+                    position: "left", // Position may be 'right' or 'left'
+                    order: "whatsapp,call", // Order of buttons
                 };
                 var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
                 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
                 s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
                 var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-                })();
-</script>
+            })();
+
+            $(function(){
+                $(".nav-link").on('click',function(){
+                    $('.nav-link').removeClass('active')
+                    $(this).addClass('active');
+                })
+            })
+
+        </script>
+<!-- /WhatsHelp.io widget -->
 
 </body>
 </html>
